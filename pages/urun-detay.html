@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ürün Detay – StepStore</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="../index.html" class="navbar__logo">STEP<span>STORE</span></a>
+    <ul class="navbar__menu">
+      <li><a href="../index.html">Ana Sayfa</a></li>
+      <li><a href="urunler.html" class="aktif">Ürünler</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+      <li><a href="sepet.html" class="navbar__sepet">🛒 Sepet <span class="sepet-sayac"></span></a></li>
+    </ul>
+    <button class="navbar__hamburger" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- SAYFA BAŞLIĞI -->
+  <div class="sayfa__baslik">
+    <h1>ÜRÜN DETAY</h1>
+    <p><a href="urunler.html" style="color:rgba(255,255,255,0.7);">Ürünler</a> &rsaquo; AirStep Pro</p>
+  </div>
+
+  <!-- ÜRÜN DETAY -->
+  <section class="detay__bolum">
+
+    <!-- Sol: Görsel -->
+    <div class="detay__resim">👟</div>
+
+    <!-- Sağ: Bilgiler -->
+    <div class="detay__bilgi">
+      <p class="detay__kategori">Spor Ayakkabı</p>
+      <h1 class="detay__isim">AirStep Pro</h1>
+      <p class="detay__fiyat">1.299 ₺</p>
+
+      <p class="detay__aciklama">
+        AirStep Pro, uzun koşular ve yoğun antrenmanlar için tasarlanmış profesyonel spor ayakkabısıdır.
+        Hafif taban yapısı, nefes alabilen mesh üst kısmı ve destekleyici topuk tasarımı ile her adımda
+        maksimum konfor sağlar. Kaymaz taban özelliği ile tüm zemin koşullarında güvenli hareket imkânı sunar.
+      </p>
+
+      <!-- Beden Seçimi -->
+      <p class="detay__beden-baslik">Beden Seç:</p>
+      <div class="beden__secenekler">
+        <button class="beden__btn">38</button>
+        <button class="beden__btn">39</button>
+        <button class="beden__btn">40</button>
+        <button class="beden__btn">41</button>
+        <button class="beden__btn">42</button>
+        <button class="beden__btn">43</button>
+        <button class="beden__btn">44</button>
+      </div>
+
+      <!-- Butonlar -->
+      <div class="detay__butonlar">
+        <button
+          id="detay-sepete-ekle"
+          class="btn btn-ana"
+          data-id="1"
+          data-isim="AirStep Pro"
+          data-fiyat="1299"
+          data-emoji="👟"
+        >
+          🛒 Sepete Ekle
+        </button>
+        <a href="urunler.html" class="btn btn-cizgi">← Ürünlere Dön</a>
+      </div>
+
+      <!-- Özellikler Tablosu -->
+      <div class="detay__ozellikler">
+        <h3>Ürün Özellikleri</h3>
+        <div class="ozellik__satir">
+          <span>Marka</span>
+          <span>StepStore</span>
+        </div>
+        <div class="ozellik__satir">
+          <span>Model</span>
+          <span>AirStep Pro 2025</span>
+        </div>
+        <div class="ozellik__satir">
+          <span>Renk</span>
+          <span>Mavi / Beyaz</span>
+        </div>
+        <div class="ozellik__satir">
+          <span>Materyal</span>
+          <span>Mesh + Sentetik</span>
+        </div>
+        <div class="ozellik__satir">
+          <span>Taban</span>
+          <span>EVA Köpük, Kaymaz</span>
+        </div>
+        <div class="ozellik__satir">
+          <span>Kullanım</span>
+          <span>Spor / Koşu</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer__ust">
+      <div>
+        <div class="footer__logo">STEP<span>STORE</span></div>
+        <p class="footer__aciklama">Her adımda yanında olan ayakkabı markası. Kalite, konfor ve stil bir arada.</p>
+      </div>
+      <div>
+        <p class="footer__baslik">Sayfalar</p>
+        <div class="footer__linkler">
+          <a href="../index.html">Ana Sayfa</a>
+          <a href="urunler.html">Ürünler</a>
+          <a href="sepet.html">Sepet</a>
+          <a href="iletisim.html">İletişim</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer__baslik">İletişim</p>
+        <div class="footer__linkler">
+          <a href="mailto:info@stepstore.com">info@stepstore.com</a>
+          <a href="tel:+905001234567">+90 500 123 45 67</a>
+          <a href="#">İstanbul, Türkiye</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer__alt">© 2025 StepStore. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script src="../scripts/myscript.js"></script>
+</body>
+
+</html>

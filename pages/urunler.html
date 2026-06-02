@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ürünler – StepStore</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="../index.html" class="navbar__logo">STEP<span>STORE</span></a>
+    <ul class="navbar__menu">
+      <li><a href="../index.html">Ana Sayfa</a></li>
+      <li><a href="urunler.html" class="aktif">Ürünler</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+      <li><a href="sepet.html" class="navbar__sepet">🛒 Sepet <span class="sepet-sayac"></span></a></li>
+    </ul>
+    <button class="navbar__hamburger" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- SAYFA BAŞLIĞI -->
+  <div class="sayfa__baslik">
+    <h1>TÜM ÜRÜNLER</h1>
+    <p>Koleksiyonumuzu keşfet, sana en uygun modeli bul.</p>
+  </div>
+
+  <!-- ÜRÜNLER -->
+  <section class="urunler__bolum">
+
+    <!-- FİLTRE -->
+    <div class="filtre__bar">
+      <button class="filtre__btn aktif" data-kategori="hepsi">Tümü</button>
+      <button class="filtre__btn" data-kategori="spor">Spor</button>
+      <button class="filtre__btn" data-kategori="gunluk">Günlük</button>
+      <button class="filtre__btn" data-kategori="klasik">Klasik</button>
+      <button class="filtre__btn" data-kategori="outdoor">Outdoor</button>
+    </div>
+
+    <!-- ÜRÜN GRID -->
+    <div class="urun__grid">
+
+      <div class="urun__kart" data-kategori="spor">
+        <div class="urun__resim">👟</div>
+        <div class="urun__bilgi">
+          <span class="urun__kategori">Spor</span>
+          <div class="urun__isim">AirStep Pro</div>
+          <div class="urun__fiyat">1.299 ₺</div>
+          <a href="urun-detay.html?id=1" class="urun__buton">İncele</a>
+        </div>
+      </div>
+
+      <div class="urun__kart" data-kategori="gunluk">
+        <div class="urun__resim">👞</div>
+        <div class="urun__bilgi">
+          <span class="urun__kategori">Günlük</span>
+          <div class="urun__isim">UrbanWalk</div>
+          <div class="urun__fiyat">989 ₺</div>
+          <a href="urun-detay.html?id=2" class="urun__buton">İncele</a>
+        </div>
+      </div>
+
+      <div class="urun__kart" data-kategori="klasik">
+        <div class="urun__resim">👠</div>
+        <div class="urun__bilgi">
+          <span class="urun__kategori">Klasik</span>
+          <div class="urun__isim">ElegantStep</div>
+          <div class="urun__fiyat">1.599 ₺</div>
+          <a href="urun-detay.html?id=3" class="urun__buton">İncele</a>
+        </div>
+      </div>
+
+      <div class="urun__kart" data-kategori="outdoor">
+        <div class="urun__resim">🥾</div>
+        <div class="urun__bilgi">
+          <span class="urun__kategori">Outdoor</span>
+          <div class="urun__isim">TrailBoot X</div>
+          <div class="urun__fiyat">1.849 ₺</div>
+          <a href="urun-detay.html?id=4" class="urun__buton">İncele</a>
+        </div>
+      </div>
+
+      <div class="urun__kart" data-kategori="spor">
+        <div class="urun__resim">🩴</div>
+        <div class="urun__bilgi">
+          <span class="urun__kategori">Spor</span>
+          <div class="urun__isim">FlexRun Lite</div>
+          <div class="urun__fiyat">849 ₺</div>
+          <a href="urun-detay.html?id=5" class="urun__buton">İncele</a>
+        </div>
+      </div>
+
+      <div class="urun__kart" data-kategori="gunluk">
+        <div class="urun__resim">👟</div>
+        <div class="urun__bilgi">
+          <span class="urun__kategori">Günlük</span>
+          <div class="urun__isim">CasualStep</div>
+          <div class="urun__fiyat">749 ₺</div>
+          <a href="urun-detay.html?id=6" class="urun__buton">İncele</a>
+        </div>
+      </div>
+
+      <div class="urun__kart" data-kategori="klasik">
+        <div class="urun__resim">👞</div>
+        <div class="urun__bilgi">
+          <span class="urun__kategori">Klasik</span>
+          <div class="urun__isim">OxfordPro</div>
+          <div class="urun__fiyat">2.199 ₺</div>
+          <a href="urun-detay.html?id=7" class="urun__buton">İncele</a>
+        </div>
+      </div>
+
+      <div class="urun__kart" data-kategori="outdoor">
+        <div class="urun__resim">🥾</div>
+        <div class="urun__bilgi">
+          <span class="urun__kategori">Outdoor</span>
+          <div class="urun__isim">MountainStep</div>
+          <div class="urun__fiyat">2.499 ₺</div>
+          <a href="urun-detay.html?id=8" class="urun__buton">İncele</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer__ust">
+      <div>
+        <div class="footer__logo">STEP<span>STORE</span></div>
+        <p class="footer__aciklama">Her adımda yanında olan ayakkabı markası. Kalite, konfor ve stil bir arada.</p>
+      </div>
+      <div>
+        <p class="footer__baslik">Sayfalar</p>
+        <div class="footer__linkler">
+          <a href="../index.html">Ana Sayfa</a>
+          <a href="urunler.html">Ürünler</a>
+          <a href="sepet.html">Sepet</a>
+          <a href="iletisim.html">İletişim</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer__baslik">İletişim</p>
+        <div class="footer__linkler">
+          <a href="mailto:info@stepstore.com">info@stepstore.com</a>
+          <a href="tel:+905001234567">+90 500 123 45 67</a>
+          <a href="#">İstanbul, Türkiye</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer__alt">© 2025 StepStore. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script src="../scripts/myscript.js"></script>
+</body>
+
+</html>

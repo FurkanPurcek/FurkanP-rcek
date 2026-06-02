@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StepStore – Adımlarını Tamamla</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar__logo">STEP<span>STORE</span></a>
+    <ul class="navbar__menu">
+      <li><a href="index.html" class="aktif">Ana Sayfa</a></li>
+      <li><a href="pages/urunler.html">Ürünler</a></li>
+      <li><a href="pages/iletisim.html">İletişim</a></li>
+      <li><a href="pages/sepet.html" class="navbar__sepet">🛒 Sepet <span class="sepet-sayac"></span></a></li>
+    </ul>
+    <button class="navbar__hamburger" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__icerik">
+      <span class="hero__etiket">✦ YENİ SEZON 2025</span>
+      <h1 class="hero__baslik">HER ADIM<br><span>BİR HIKAYE</span></h1>
+      <p class="hero__alt">En yeni koleksiyonumuzu keşfet. Spor, şık ve günlük modeller seni bekliyor.</p>
+      <div class="hero__butonlar">
+        <a href="pages/urunler.html" class="btn btn-ana">Alışverişe Başla</a>
+        <a href="pages/urunler.html" class="btn btn-cizgi" style="color:#fff; border-color:rgba(255,255,255,0.5);">Koleksiyonu Gör</a>
+      </div>
+    </div>
+    <div class="hero__resim">👟</div>
+  </section>
+
+  <!-- ÖZELLİKLER -->
+  <section class="ozellikler">
+    <div class="bolum__baslik">
+      <h2>NEDEN STEPSTORE?</h2>
+      <p>Müşterilerimize en iyi deneyimi sunmak için buradayız.</p>
+    </div>
+    <div class="ozellikler__grid">
+      <div class="ozellik__kart">
+        <div class="ozellik__ikon">🚚</div>
+        <h3>Ücretsiz Kargo</h3>
+        <p>1500 ₺ üzeri tüm siparişlerde ücretsiz hızlı kargo seçeneği.</p>
+      </div>
+      <div class="ozellik__kart">
+        <div class="ozellik__ikon">↩️</div>
+        <h3>Kolay İade</h3>
+        <p>30 gün içinde ücretsiz iade garantisi. Memnun olmazsan iade et.</p>
+      </div>
+      <div class="ozellik__kart">
+        <div class="ozellik__ikon">🔒</div>
+        <h3>Güvenli Ödeme</h3>
+        <p>256-bit SSL şifreleme ile güvenli ödeme altyapısı.</p>
+      </div>
+      <div class="ozellik__kart">
+        <div class="ozellik__ikon">🎁</div>
+        <h3>Özel Kampanyalar</h3>
+        <p>Üyelere özel indirimler ve erken erişim fırsatları.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÖNE ÇIKAN ÜRÜNLER -->
+  <section class="one-cikan">
+    <div class="bolum__baslik">
+      <h2>ÖNE ÇIKAN ÜRÜNLER</h2>
+      <p>Bu sezonun en çok tercih edilen modelleri.</p>
+    </div>
+    <div class="urun__grid">
+
+      <div class="urun__kart" data-kategori="spor">
+        <div class="urun__resim">👟</div>
+        <div class="urun__bilgi">
+          <span class="urun__kategori">Spor</span>
+          <div class="urun__isim">AirStep Pro</div>
+          <div class="urun__fiyat">1.299 ₺</div>
+          <a href="pages/urun-detay.html?id=1" class="urun__buton">İncele</a>
+        </div>
+      </div>
+
+      <div class="urun__kart" data-kategori="gunluk">
+        <div class="urun__resim">👞</div>
+        <div class="urun__bilgi">
+          <span class="urun__kategori">Günlük</span>
+          <div class="urun__isim">UrbanWalk</div>
+          <div class="urun__fiyat">989 ₺</div>
+          <a href="pages/urun-detay.html?id=2" class="urun__buton">İncele</a>
+        </div>
+      </div>
+
+      <div class="urun__kart" data-kategori="klasik">
+        <div class="urun__resim">👠</div>
+        <div class="urun__bilgi">
+          <span class="urun__kategori">Klasik</span>
+          <div class="urun__isim">ElegantStep</div>
+          <div class="urun__fiyat">1.599 ₺</div>
+          <a href="pages/urun-detay.html?id=3" class="urun__buton">İncele</a>
+        </div>
+      </div>
+
+      <div class="urun__kart" data-kategori="spor">
+        <div class="urun__resim">🥾</div>
+        <div class="urun__bilgi">
+          <span class="urun__kategori">Outdoor</span>
+          <div class="urun__isim">TrailBoot X</div>
+          <div class="urun__fiyat">1.849 ₺</div>
+          <a href="pages/urun-detay.html?id=4" class="urun__buton">İncele</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer__ust">
+      <div>
+        <div class="footer__logo">STEP<span>STORE</span></div>
+        <p class="footer__aciklama">Her adımda yanında olan ayakkabı markası. Kalite, konfor ve stil bir arada.</p>
+      </div>
+      <div>
+        <p class="footer__baslik">Sayfalar</p>
+        <div class="footer__linkler">
+          <a href="index.html">Ana Sayfa</a>
+          <a href="pages/urunler.html">Ürünler</a>
+          <a href="pages/sepet.html">Sepet</a>
+          <a href="pages/iletisim.html">İletişim</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer__baslik">İletişim</p>
+        <div class="footer__linkler">
+          <a href="mailto:info@stepstore.com">info@stepstore.com</a>
+          <a href="tel:+905001234567">+90 500 123 45 67</a>
+          <a href="#">İstanbul, Türkiye</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer__alt">© 2025 StepStore. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script src="scripts/myscript.js"></script>
+</body>
+
+</html>

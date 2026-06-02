@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sepet – StepStore</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="../index.html" class="navbar__logo">STEP<span>STORE</span></a>
+    <ul class="navbar__menu">
+      <li><a href="../index.html">Ana Sayfa</a></li>
+      <li><a href="urunler.html">Ürünler</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+      <li><a href="sepet.html" class="navbar__sepet aktif">🛒 Sepet <span class="sepet-sayac"></span></a></li>
+    </ul>
+    <button class="navbar__hamburger" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- SAYFA BAŞLIĞI -->
+  <div class="sayfa__baslik">
+    <h1>SEPETİM</h1>
+    <p>Ürünlerini incele ve siparişini tamamla.</p>
+  </div>
+
+  <!-- SEPET İÇERİĞİ -->
+  <section class="sepet__bolum">
+
+    <!-- Sol: Ürünler -->
+    <div>
+      <div class="sepet__baslik-alan">
+        <h2>ÜRÜNLER</h2>
+      </div>
+
+      <!-- Ürün listesi JS ile dolacak -->
+      <div id="sepet-liste"></div>
+
+      <!-- Sepet boşsa göster -->
+      <div id="sepet-bos" class="sepet__bos" style="display:none;">
+        <div class="bos__ikon">🛒</div>
+        <h3>Sepetiniz Boş</h3>
+        <p>Henüz sepetinize ürün eklemediniz.</p>
+        <a href="urunler.html" class="btn btn-ana" style="margin-top:20px; display:inline-block;">Alışverişe Başla</a>
+      </div>
+    </div>
+
+    <!-- Sağ: Özet -->
+    <div class="sepet__ozet">
+      <h3>SİPARİŞ ÖZETİ</h3>
+      <div class="ozet__satir">
+        <span>Ara Toplam</span>
+        <span id="ara-toplam">0 ₺</span>
+      </div>
+      <div class="ozet__satir">
+        <span>Kargo</span>
+        <span id="kargo-ucret">0 ₺</span>
+      </div>
+      <div class="ozet__satir">
+        <span>Genel Toplam</span>
+        <span id="genel-toplam">0 ₺</span>
+      </div>
+      <button class="btn btn-ana sepet__btn-odeme">Siparişi Tamamla</button>
+      <p style="text-align:center; font-size:0.8rem; color:#aab4c0; margin-top:12px;">🔒 Güvenli ödeme altyapısı</p>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer__ust">
+      <div>
+        <div class="footer__logo">STEP<span>STORE</span></div>
+        <p class="footer__aciklama">Her adımda yanında olan ayakkabı markası. Kalite, konfor ve stil bir arada.</p>
+      </div>
+      <div>
+        <p class="footer__baslik">Sayfalar</p>
+        <div class="footer__linkler">
+          <a href="../index.html">Ana Sayfa</a>
+          <a href="urunler.html">Ürünler</a>
+          <a href="sepet.html">Sepet</a>
+          <a href="iletisim.html">İletişim</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer__baslik">İletişim</p>
+        <div class="footer__linkler">
+          <a href="mailto:info@stepstore.com">info@stepstore.com</a>
+          <a href="tel:+905001234567">+90 500 123 45 67</a>
+          <a href="#">İstanbul, Türkiye</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer__alt">© 2025 StepStore. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script src="../scripts/myscript.js"></script>
+</body>
+
+</html>
